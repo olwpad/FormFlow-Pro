@@ -1,6 +1,6 @@
 export const Step3 :React.FC= () => {
     return (
-      <div>Step2</div>
+      <div>Step3</div>
     )
   }
   

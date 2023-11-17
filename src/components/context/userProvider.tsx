@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { UserContext } from './UserContext';  // Ajusta el nombre aquí
-
+import { UserContext } from './UserContext';
 interface Props {
   children: JSX.Element | JSX.Element[];
 }
