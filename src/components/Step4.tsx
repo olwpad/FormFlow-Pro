@@ -29,6 +29,7 @@ export const Step4: React.FC = () => {
     <main>
       <ProgressBar animated now={80} />
       <h3>Welcome, Join us!</h3>
+      <div className='container'>
       <div className="card">
         <Formik
           initialValues={initialValues}
@@ -57,6 +58,20 @@ export const Step4: React.FC = () => {
             <button type="button" onClick={goBack}>Prev</button>
           </Form>
         </Formik>
+      </div>
+      <div className='texto'>
+        <h2>Welcome</h2>
+        {
+            state.step<5 &&(
+              <div>
+                <p>1paso:diligenciado</p>
+                <p>2paso:diligenciado</p>
+                <p>3paso:diligenciado</p>
+                <p>{state.step}paso:Actual</p>
+                <p>5paso:bloqueado</p>
+            </div>
+            )}
+      </div>
       </div>
     </main>
   );

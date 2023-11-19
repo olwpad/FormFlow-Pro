@@ -1,0 +1,22 @@
+@use "../variables" as v;
+
+.Summary {
+  margin: 20px; 
+  padding: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  background-color: #fff;
+
+  > div {
+    margin-top: 20px;
+    font-size: 16px;
+
+    p {
+      margin-bottom: 10px;
+
+      strong {
+        color:v.$color;
+      }
+    }
+  }
+}

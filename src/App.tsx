@@ -1,5 +1,5 @@
 
-import './App.css'
+
 import { Home } from "./Home";
 import {   Route, Routes} from 'react-router-dom';
 import { UserProvider } from './components/context/userProvider'

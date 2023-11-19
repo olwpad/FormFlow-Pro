@@ -28,13 +28,16 @@ const Step1: React.FC = () => {
 
   return (
     <main>
-      <ProgressBar animated now={20} />
-      <h3>Welcome, Join us!</h3>
+        <ProgressBar animated now={20} variant='#FF5A7F' />
+       <h3>Welcome, Join us!</h3>
+      <div className='container'>
       <div className="card">
+        <h2>Hello My friend</h2>
+        <p>Follow steps</p>
         <Formik initialValues={initialValues} onSubmit={onSubmit}>
           <Form autoComplete="off">
             <fieldset>
-              <label htmlFor="firstName">Full name</label>
+              <label htmlFor="firstName">Firstaname</label>
               <Field name="firstName" id="firstName" type="text" autoFocus />
               <ErrorMessage
                 name="firstName"
@@ -55,6 +58,20 @@ const Step1: React.FC = () => {
             <button type="button" onClick={goBack}>Prev</button>
           </Form>
         </Formik>
+      </div>
+      <div className='texto'>
+        <h2>Welcome</h2>
+          {
+            state.step<2 &&(
+              <div>
+                <p>{state.step}paso:Actual</p>
+                <p>2paso:bloqueado</p>
+                <p>3paso:bloqueado</p>
+                <p>4paso:bloqueado</p>
+                <p>5paso:bloqueado</p>
+            </div>
+            )}
+      </div>
       </div>
     </main>
   );
