@@ -6,25 +6,25 @@ export const Summary:React.FC = () => {
   const{state,dispatch}=useContext(UserContext);
   console.log(state)
   return (
-    <div>Summary
-<div>
-  <p><strong>Nombre:</strong> {state.formData.firstName}</p>
+    <><ProgressBar animated now={100} /><div>Summary
+      <div>
+        <p><strong>Nombre:</strong> {state.formData.firstName}</p>
 
-  <p><strong>Apellido:</strong> {state.formData.lastName}</p>
+        <p><strong>Apellido:</strong> {state.formData.lastName}</p>
 
-  <p><strong>Nombre de usuario:</strong> {state.formData.username}</p>
+        <p><strong>Nombre de usuario:</strong> {state.formData.username}</p>
 
-  <p><strong>Correo electrónico:</strong> {state.formData.email}</p>
+        <p><strong>Correo electrónico:</strong> {state.formData.email}</p>
 
-  <p><strong>Contraseña:</strong></p>
+        <p><strong>Contraseña:</strong></p>
 
-  <p><strong>Teléfono:</strong> {state.formData.phone}</p>
+        <p><strong>Teléfono:</strong> {state.formData.phone}</p>
 
-  <p><strong>Dirección:</strong> {state.formData.address}</p>
+        <p><strong>Dirección:</strong> {state.formData.address}</p>
 
-  <p><strong>Ciudad:</strong> {state.formData.city}</p>
-</div>
-  <ProgressBar animated now={100} />;
-    </div>
+        <p><strong>Ciudad:</strong> {state.formData.city}</p>
+      </div>
+
+    </div></>
   )
 }

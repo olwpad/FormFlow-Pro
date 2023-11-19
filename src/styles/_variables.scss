@@ -1,6 +1,6 @@
 // Colores
-$bg-color: #dd2d91;
-$color: #fff;
+$color: #5284F3;
+$bg-color: #fff;
 
 // Bordes
 $borde-delgado: 1px solid $bg-color;
@@ -15,3 +15,7 @@ $warning: #ffc008;
 $info: #11caf0;
 $white: #fff;
 $black: #000;
+
+// Shadows
+$main-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
