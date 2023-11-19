@@ -1,97 +1,58 @@
-
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import { useContext } from "react";
+import React from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { UserContext } from "./context/UserContext";
+import { UserContext } from './context/UserContext';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Step1: React.FC = () => {
-  const{state,dispatch}=useContext(UserContext);
+  const { state, dispatch } = useContext(UserContext);
+  const navigate = useNavigate();
 
   const initialValues = {
-    fullName: "",  
-    email: "",
-    password: "",
-    confirm: "",
-    framework: "",
-    terms: false,
+    firstName: '',
+    lastName: '',
   };
- const navigate=useNavigate();
-  const onSubmit = (values:any) => {
+
+  const onSubmit = (values: any) => {
     dispatch({ type: 'UPDATE_DATA', payload: values });
     dispatch({ type: 'NEXT_STEP' });
-  navigate("/step2")
+    navigate('/step2');
   };
+
+  const goBack = () => {
+    dispatch({ type: 'PREV_STEP' });
+    navigate('/');
+  };
+
   return (
     <main>
+      <ProgressBar animated now={20} />
       <h3>Welcome, Join us!</h3>
       <div className="card">
-        <Formik
-          initialValues={initialValues}
-          onSubmit={onSubmit}
-
-        >
+        <Formik initialValues={initialValues} onSubmit={onSubmit}>
           <Form autoComplete="off">
             <fieldset>
-              <label htmlFor="fullName">Full name</label>
-              <Field name="fullName" id="fullName" type="text" autoFocus />
+              <label htmlFor="firstName">Full name</label>
+              <Field name="firstName" id="firstName" type="text" autoFocus />
               <ErrorMessage
-                name="fullName"
+                name="firstName"
                 component="p"
                 className="error-message"
               />
             </fieldset>
             <fieldset>
-              <label htmlFor="email">email</label>
-              <Field name="email" id="email" type="email" />
+              <label htmlFor="lastName">Last name</label>
+              <Field name="lastName" id="lastName" type="text" />
               <ErrorMessage
-                name="email"
+                name="lastName"
                 component="p"
                 className="error-message"
               />
             </fieldset>
-            <fieldset>
-              <label htmlFor="password">password</label>
-              <Field name="password" id="password" type="password" />
-              <ErrorMessage
-                name="password"
-                component="p"
-                className="error-message"
-              />
-            </fieldset>
-            <fieldset>
-              <label htmlFor="confirm">Confirm password</label>
-              <Field name="confirm" id="confirm" type="password" />
-              <ErrorMessage
-                name="confirm"
-                component="p"
-                className="error-message"
-              />
-            </fieldset>
-            <fieldset>
-              <label htmlFor="framework">Favorite framework</label>
-              <Field name="framework" id="framework" as="select">
-                <option value="">Select your framework</option>
-                <option value="react">React</option>
-                <option value="vue">Vue</option>
-                <option value="angular">Angular</option>
-              </Field>
-              <ErrorMessage
-                name="framework"
-                component="p"
-                className="error-message"
-              />
-            </fieldset>
-            <fieldset>
-              <label htmlFor="terms">
-                <Field name="terms" id="terms" type="checkbox" /> Accept terms
-                and conditions
-              </label>
-              <ErrorMessage
-                name="terms"
-                component="p"
-                className="error-message error-message-terms"
-              />
-            </fieldset>
-            <button type="submit">Aceptar</button>
+            <button type="submit">Next</button>
+            <button type="button" onClick={goBack}>Prev</button>
           </Form>
         </Formik>
       </div>
@@ -100,5 +61,3 @@ const Step1: React.FC = () => {
 };
 
 export default Step1;
-
-

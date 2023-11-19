@@ -3,10 +3,9 @@ export type FormAction =
   | { type: 'PREV_STEP' }
   | { type: 'UPDATE_DATA'; payload: any };
 
-// Define el tipo para el estado del formulario
 export interface FormState {
   step: number;
-  formData: any; // Tipo para los datos del formulario
+  formData: any;
 }
 
 

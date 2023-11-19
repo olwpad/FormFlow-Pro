@@ -1,0 +1,5 @@
+@use "./variables" as v;
+.fondo{
+    background-color: v.$bg-color
+}
+    
