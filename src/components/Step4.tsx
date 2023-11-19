@@ -3,6 +3,10 @@ import { useContext } from "react";
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from "./context/UserContext";
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { validation4 } from "../schemas/steps";
+import { MdBlock } from "react-icons/md";
+import { MdOutlineDone } from "react-icons/md";
+import { GiPositionMarker } from "react-icons/gi";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Step4: React.FC = () => {
@@ -31,9 +35,12 @@ export const Step4: React.FC = () => {
       <h3>Welcome, Join us!</h3>
       <div className='container'>
       <div className="card">
+      <h2>Hello My friend</h2>
+        <p>Follow the steps</p>
         <Formik
           initialValues={initialValues}
           onSubmit={onSubmit}
+          validationSchema={validation4}
         >
           <Form autoComplete="off">
             <fieldset>
@@ -60,15 +67,15 @@ export const Step4: React.FC = () => {
         </Formik>
       </div>
       <div className='texto'>
-        <h2>Welcome</h2>
+        <h2>Steps</h2>
         {
             state.step<5 &&(
               <div>
-                <p>1paso:diligenciado</p>
-                <p>2paso:diligenciado</p>
-                <p>3paso:diligenciado</p>
-                <p>{state.step}paso:Actual</p>
-                <p>5paso:bloqueado</p>
+                <p>1Step:<MdOutlineDone/></p>
+                <p>2Step:<MdOutlineDone/></p>
+                <p>3Step:<MdOutlineDone/></p>
+                <p>{state.step}Step:<GiPositionMarker /></p>
+                <p>5 Step:<MdBlock /></p>
             </div>
             )}
       </div>

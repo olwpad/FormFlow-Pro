@@ -1,62 +1,71 @@
 @use "../variables" as v;
 @use "./button" as b;
 @use "./label" as L;
-@use "./input.scss"as i;
-main{
+@use "./input.scss" as i;
+@use "./mediaquery" as md;
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+  h3 {
+    color: v.$color;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 30px;
+    @include md.mediaquery3();
+  }
+
+  .card {
+    background-color: v.$white;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    h3{
-      color: v.$color;
-      text-align: center;
-      margin-top: 20px;
-     }
-    .container{
-      display: flex;
-      justify-content: center;
-    width: 80%;
-   display: flex;
-   margin-top: 30px;
-    }
-     .card{
-      background-color: v.$white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top-left-radius: 25px; /* Radio de borde superior izquierdo */
-      border-bottom-left-radius: 25px; /* Radio de borde inferior izquierdo */
-      box-shadow: v.$maind-shadow;
-      width: 30%;
-      height: auto;
-     }
-     fieldset {
-      border: none;
-      display: flex;
-      flex-direction: column;
-      padding: 0.1rem 0;
-     @include L.label();
-     @include i.input();
-      }
-      @include b.button();
-      .texto{
-        background-color:v.$color;
-        width: 25%;
-        height: 100px;
-        color: v.$bg-color;
-        padding: 50px;
-        height: auto;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        box-shadow: v.$main-shadow;
-        border-top-right-radius:10px; /* Radio de borde superior izquierdo */
-        border-bottom-right-radius: 10px; /* Radio de borde inferior izquierdo */
-      p{
-        font-family: v.$font-family;
-      }
-      }
-}
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: v.$maind-shadow;
+    width: 35%;
+    height: auto;
+    padding: 5px;
+    @include md.mediaquery1();
+    @include b.button();
+  }
 
+  fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem 0;
+    @include L.label();
+    @include i.input();
+  }
+
+
+
+  .texto {
+    background-color: v.$color;
+    width: 35%;
+    height: 100px;
+    color: v.$bg-color;
+    padding: 50px;
+    height: auto;
+    display: flex;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: v.$main-shadow;
+    @include md.mediaquery2();
+
+    p {
+      font-family: v.$font-family;
+    }
+  }
+}
