@@ -30,7 +30,7 @@ main {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     box-shadow: v.$maind-shadow;
-    width: 35%;
+    width: 30%;
     height: auto;
     padding: 5px;
     @include md.mediaquery1();
@@ -50,7 +50,7 @@ main {
 
   .texto {
     background-color: v.$color;
-    width: 35%;
+    width: 30%;
     height: 100px;
     color: v.$bg-color;
     padding: 50px;
@@ -63,7 +63,9 @@ main {
     flex-direction: column;
     box-shadow: v.$main-shadow;
     @include md.mediaquery2();
-
+    .icon{
+      color:red;
+    }
     p {
       font-family: v.$font-family;
     }

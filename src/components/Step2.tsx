@@ -1,5 +1,5 @@
 import { UserContext } from "./context/UserContext";
-import { useContext } from "react";
+import { useContext ,useEffect} from "react";
 import { useNavigate } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import ProgressBar from 'react-bootstrap/ProgressBar';
@@ -18,6 +18,12 @@ export const Step2: React.FC = () => {
   };
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (state.formData) {
+      initialValues.email = state.formData.email || '';
+      initialValues.phone = state.formData.phone || '';
+    }
+  }, [state]);
   const onSubmit = (values: any) => {
     dispatch({ type: 'UPDATE_DATA', payload: values });
     dispatch({ type: 'NEXT_STEP' });
@@ -29,6 +35,9 @@ export const Step2: React.FC = () => {
     dispatch({ type: 'PREV_STEP' });
     navigate('/step1');
   };
+
+
+
   return (
     <main>
       <ProgressBar animated now={40} />
@@ -41,6 +50,7 @@ export const Step2: React.FC = () => {
           initialValues={initialValues}
           onSubmit={onSubmit}
           validationSchema={validation2}
+          enableReinitialize={true}
         >
           <Form autoComplete="off">
             <fieldset>
