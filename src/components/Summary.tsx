@@ -43,7 +43,7 @@ export const Summary: React.FC = () => {
                 <p>5 Step:<MdOutlineDone/></p>
             </div>
             )}
-               <button type="button" onClick={goBack}>
+               <button type="button" className='button2' onClick={goBack}>
                 back
                </button>
     </div>

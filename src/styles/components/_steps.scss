@@ -63,6 +63,7 @@ main {
     flex-direction: column;
     box-shadow: v.$main-shadow;
     @include md.mediaquery2();
+    @include b.button2();
     .icon{
       color:red;
     }
