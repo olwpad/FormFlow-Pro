@@ -32,7 +32,7 @@ export const Summary: React.FC = () => {
 
       </div>
       <div className='texto'>
-        <h2>Follow The Steps</h2>
+        <h2>Steps completed</h2>
         {
             state.step>4 &&(
               <div>
