@@ -45,7 +45,7 @@ export const Step3: React.FC = () => {
       <div className='container'>
       <div className="card">
       <h2>Hello My friend</h2>
-        <p>Follow the steps</p>
+      <p className='card_parrafo'>Follow the steps</p>
         <Formik
           initialValues={initialValues}
           onSubmit={onSubmit}

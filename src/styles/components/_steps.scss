@@ -7,18 +7,21 @@
 main {
   width: 100vw;
   height: 100vh;
-
   h3 {
     color: v.$color;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
+  }
+  h2{
+    text-align: center;
+    font-size:  1.5rem;;
   }
 
   .container {
     display: flex;
     justify-content: center;
     width: 80%;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     @include md.mediaquery3();
   }
 
@@ -26,15 +29,17 @@ main {
     background-color: v.$white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-left-radius: 1.5625rem;
     box-shadow: v.$maind-shadow;
-    width: 30%;
+    width: 35%;
     height: auto;
-    padding: 5px;
+    padding:1.8rem;
     @include md.mediaquery1();
     @include b.button();
+    &_parrafo{
+      text-align: center;
+    }
   }
 
   fieldset {
@@ -50,10 +55,10 @@ main {
 
   .texto {
     background-color: v.$color;
-    width: 30%;
+    width: 20%;
     height: 100px;
     color: v.$bg-color;
-    padding: 50px;
+    padding: 3.125rem;
     height: auto;
     display: flex;
     border-top-right-radius: 25px;
@@ -69,6 +74,8 @@ main {
     }
     p {
       font-family: v.$font-family;
+      font-size:1rem;
     }
+    
   }
 }
