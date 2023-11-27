@@ -20,9 +20,9 @@ Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
    ```bash
    git clone https://github.com/olwpad/FormFlow-Pro.git
    cd vite-project
-2. **Instala las Dependencias:**
+1. **Instala las Dependencias:**
+   ```bash
+     npm install
+3. **Inicializa Aplicación**
   ```bash
-    npm install
-3. **Inicia la aplicación:**
-       ```bash
-    npm run dev
+     npm run dev
