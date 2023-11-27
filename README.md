@@ -18,7 +18,7 @@ Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
 
 1. **Clona el Repositorio:**
    ```bash
-   git clone https://url-del-repositorio.git
+   git clone https://github.com/olwpad/FormFlow-Pro.git
    cd vite-project
 2. **Instala las Dependencias:**
   ```bash
