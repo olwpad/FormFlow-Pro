@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+# Proyecto de Creación de Formulario a Pasos con Formik y React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto se enfoca en la implementación de un formulario a pasos utilizando Formik y React. La aplicación está desarrollada en TypeScript e integra varias tecnologías clave.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Bootstrap (^5.3.2):** Framework de diseño web para crear interfaces modernas y responsivas.
+- **Formik (^2.4.5):** Librería para gestionar formularios en React de manera efectiva.
+- **React (^18.2.0):** Biblioteca para construir interfaces de usuario reactivas.
+- **React Icons (^4.12.0):** Conjunto de iconos para proyectos React.
+- **React Router (^6.19.0) y React Router DOM (^6.19.0):** Herramientas de enrutamiento para aplicaciones React.
+- **Sass (^1.69.5):** Preprocesador de estilos que mejora las capacidades de CSS.
+- **Yup (^1.3.2):** Biblioteca de validación de esquemas para JavaScript.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clona el Repositorio:**
+   ```bash
+   git clone https://url-del-repositorio.git
+   cd vite-project
+2. **Instala las Dependencias:**
+  ```bash
+    npm install
+3. **Inicia la aplicación:**
+       ```bash
+    npm run dev
