@@ -8,7 +8,7 @@ interface Props {
 export const UserProvider: React.FC<Props> = ({ children }: Props) => {
   const [state, dispatch] = useReducer(formReducer, {
     step: 1,
-    formData: {}, // Inicializa con un objeto vacío
+    formData: {},
   });
   return (
     <UserContext.Provider value={{ state, dispatch }}>
