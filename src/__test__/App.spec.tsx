@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { UserProvider } from '../components/context/userProvider'; // Asegúrate de que sea el nombre correcto del archivo
+import { UserProvider } from '../components/context/userProvider';
 import Step1 from '../components/Step1';
 
 describe('Step1 component', () => {
