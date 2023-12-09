@@ -1,0 +1,363 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step1 component Renderiza el componente correctamente 1`] = `
+<div>
+  <main>
+    <div
+      class="progress"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="20"
+        class="progress-bar progress-bar-animated progress-bar-striped"
+        role="progressbar"
+        style="width: 20%;"
+      />
+    </div>
+    <h3>
+      Welcome, Join us!
+    </h3>
+    <div
+      class="container"
+    >
+      <div
+        class="card"
+      >
+        <h2>
+          Hello My friend
+        </h2>
+        <p
+          class="card_parrafo"
+        >
+          Follow the steps
+        </p>
+        <form
+          action="#"
+          autocomplete="off"
+          data-testid="tu-form-id"
+        >
+          <fieldset>
+            <label
+              for="firstName"
+            >
+              FirstName
+            </label>
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              value=""
+            />
+          </fieldset>
+          <fieldset>
+            <label
+              for="lastName"
+            >
+              Last name
+            </label>
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              value=""
+            />
+          </fieldset>
+          <button
+            type="submit"
+          >
+            Next
+          </button>
+        </form>
+      </div>
+      <div
+        class="texto"
+      >
+        <h2>
+          Steps
+        </h2>
+        <div>
+          <p>
+            1
+             Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 17.108c-75.73 0-137.122 61.392-137.122 137.122.055 23.25 6.022 46.107 11.58 56.262L256 494.892l119.982-274.244h-.063c11.27-20.324 17.188-43.18 17.202-66.418C393.122 78.5 331.73 17.108 256 17.108zm0 68.56a68.56 68.56 0 0 1 68.56 68.562A68.56 68.56 0 0 1 256 222.79a68.56 68.56 0 0 1-68.56-68.56A68.56 68.56 0 0 1 256 85.67z"
+              />
+            </svg>
+          </p>
+          <p>
+            2 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+          <p>
+            3 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+          <p>
+            4 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+          <p>
+            5 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;
+
+exports[`Step1 component debería renderizar correctamente 1`] = `
+<div>
+  <main>
+    <div
+      class="progress"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="20"
+        class="progress-bar progress-bar-animated progress-bar-striped"
+        role="progressbar"
+        style="width: 20%;"
+      />
+    </div>
+    <h3>
+      Welcome, Join us!
+    </h3>
+    <div
+      class="container"
+    >
+      <div
+        class="card"
+      >
+        <h2>
+          Hello My friend
+        </h2>
+        <p
+          class="card_parrafo"
+        >
+          Follow the steps
+        </p>
+        <form
+          action="#"
+          autocomplete="off"
+          data-testid="tu-form-id"
+        >
+          <fieldset>
+            <label
+              for="firstName"
+            >
+              FirstName
+            </label>
+            <input
+              id="firstName"
+              name="firstName"
+              type="text"
+              value=""
+            />
+          </fieldset>
+          <fieldset>
+            <label
+              for="lastName"
+            >
+              Last name
+            </label>
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              value=""
+            />
+          </fieldset>
+          <button
+            type="submit"
+          >
+            Next
+          </button>
+        </form>
+      </div>
+      <div
+        class="texto"
+      >
+        <h2>
+          Steps
+        </h2>
+        <div>
+          <p>
+            1
+             Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 17.108c-75.73 0-137.122 61.392-137.122 137.122.055 23.25 6.022 46.107 11.58 56.262L256 494.892l119.982-274.244h-.063c11.27-20.324 17.188-43.18 17.202-66.418C393.122 78.5 331.73 17.108 256 17.108zm0 68.56a68.56 68.56 0 0 1 68.56 68.562A68.56 68.56 0 0 1 256 222.79a68.56 68.56 0 0 1-68.56-68.56A68.56 68.56 0 0 1 256 85.67z"
+              />
+            </svg>
+          </p>
+          <p>
+            2 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+          <p>
+            3 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+          <p>
+            4 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+          <p>
+            5 Step:
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9A7.902 7.902 0 014 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1A7.902 7.902 0 0120 12c0 4.42-3.58 8-8 8z"
+              />
+            </svg>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;
