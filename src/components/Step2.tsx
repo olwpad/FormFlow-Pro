@@ -41,7 +41,7 @@ export const Step2: React.FC = () => {
   return (
     <main>
       <ProgressBar animated now={40} />
-      <h3>Welcome, Join us!</h3>
+      <h3>Step into Greatness: Your Journey Begins Here!</h3>
       <div className='container'>
       <div className="card">
       <h2>Hello My friend</h2>

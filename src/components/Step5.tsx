@@ -34,7 +34,7 @@ export const Step5: React.FC = () => {
   return (
     <main>
       <ProgressBar animated now={80} />
-      <h3>Welcome, Join us!</h3>
+      <h3>Trailblazing Success: Your Steps Define Your Future!</h3>
       <div className='container'>
       <div className="card">
       <h2>Hello My friend</h2>
@@ -74,7 +74,7 @@ export const Step5: React.FC = () => {
                 <p>2 Step:<MdOutlineDone/></p>
                 <p>3 Step:<MdOutlineDone/></p>
                 <p>4 Step:<MdOutlineDone/></p>
-                <p>{state.step} Step:<GiPositionMarker /></p>
+                <p>5 Step:<GiPositionMarker /></p>
             </div>
             )}
       </div>

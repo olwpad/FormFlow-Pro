@@ -40,7 +40,7 @@ export const Step4: React.FC = () => {
   return (
     <main>
       <ProgressBar animated now={80} />
-      <h3>Welcome, Join us!</h3>
+      <h3>Onward and Upward: Progress with Purpose!</h3>
       <div className='container'>
       <div className="card">
       <h2>Hello My friend</h2>
