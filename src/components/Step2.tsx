@@ -28,7 +28,6 @@ export const Step2: React.FC = () => {
     dispatch({ type: 'UPDATE_DATA', payload: values });
     dispatch({ type: 'NEXT_STEP' });
     navigate("/step3");
-    console.log(state);
   };
 
   const goBack = () => {
